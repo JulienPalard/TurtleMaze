@@ -62,3 +62,14 @@ The webcam video stream may be split in three different streams:
  - One for the feedback for the GUI
  - One for the grid parser
  - One for the robot controller to spot the robot
+
+## Pattern matching
+
+ - In order to find cards on the table, we'll need to use a pattern
+   matching algorithm
+ - To simplify the search phase, we'll map the chessboard to 2d.
+ - Only 1 degree of liberty remain: card orientation.
+ - We'll have to use a complicated pattern to avoid false-positives
+ - Not too complicate to remain distinctive at a low resolution
+ - Idea may to use a round point to detect first (0 degree of libery),
+   then from those points, match an "arrow" to get the direction: to test.
